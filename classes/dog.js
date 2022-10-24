@@ -1,14 +1,12 @@
-class Dog {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-  }
+function Dog(name, age) {
+  this.name = name;
+  this.age = age;
 
-  bark() {
+  Dog.prototype.bark = function() {
     console.log("Bark");
   }
 
-  static diet() {
+  Dog.diet = function() {
     return "carnivore";
   }
 }
